@@ -1,0 +1,16 @@
+---
+- hosts: all
+  tasks:
+        - name: Verify Nginx config
+          become: yes
+          prompt: "VM name:"
+          command: nginx -t
+          changed_when: false
+        - name: check nginx status
+          become: yes
+          command: service nginx status
+          changed_when: false
+        - name: check mysql status
+          become: yes
+          command: service mysql status
+          changed_when: false

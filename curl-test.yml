@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+   - name: test curl
+     shell: curl https://www.web-canape.ru/
