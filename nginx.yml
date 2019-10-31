@@ -7,3 +7,5 @@
           shell: uname -a
         - name: pwd
           shell: pwd
+        - name: ls -l /dev/sd*
+          shell: ls -l /dev/sd*  
