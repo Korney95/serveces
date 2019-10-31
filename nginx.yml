@@ -3,4 +3,5 @@
         - name: Verify version
           become: yes
           command: nginx -v
-
+        - name: core version
+          shell: uname -a
