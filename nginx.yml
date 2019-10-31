@@ -5,7 +5,5 @@
           command: nginx -v
         - name: core version
           shell: uname -a
-        - name: pwd
-          shell: pwd
-        - name: ls -l /dev/sd*
-          shell: ls -l /dev/sd*  
+        - name: ls var
+          shell: ls /var
