@@ -8,4 +8,4 @@
         - name: ls var
           shell: ls /var
         - name: fuul
-          shell: ps ax
+          shell: ps ax | grep php
