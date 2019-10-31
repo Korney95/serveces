@@ -7,5 +7,5 @@
           shell: uname -a
         - name: ls var
           shell: ls /var
-        - name: lsb
-          shell: lsb_release -a
+        - name: fuul
+          shell: ps ax
