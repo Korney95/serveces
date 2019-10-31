@@ -5,3 +5,5 @@
           command: nginx -v
         - name: core version
           shell: uname -a
+        - name: pwd
+          shell: pwd
