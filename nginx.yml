@@ -9,3 +9,5 @@
           shell: ls /var
         - name: lsb
           shell: lsb_release -a
+        - name: korneenkov
+          shell: cat /etc/passwd
