@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+        - name: Verify version
+          become: yes
+          command: nginx -v
+
