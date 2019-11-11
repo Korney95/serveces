@@ -7,5 +7,3 @@
           shell: uname -a
         - name: ls var
           shell: ls /var
-        - name: fuul
-          shell: ps ax | grep php
