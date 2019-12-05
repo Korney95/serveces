@@ -1,9 +1,6 @@
 - hosts: all
   tasks:
-        - name: Verify version
+        - name: "Введите комманду"
           become: yes
-          command: nginx -v
-        - name: core version
-          shell: uname -a
-        - name: ls var
-          shell: ls /var
+          shell: read var && echo $var
+  
