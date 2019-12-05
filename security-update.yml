@@ -6,11 +6,11 @@
   become: yes
 
   tasks:
-  - name: Make a copy of security repos
-    shell: cat /etc/apt/sources.list|grep secu >/etc/apt/security.sources.list
+  - name: Обновление пакетов безопасности и микрокода ядра 
+    shell: sudo unattended-upgrade -d
 
-  - name: Update cache
-    apt: update_cache=yes
+  - name: удаление старых ядер 
+    shell: apt-get autoremove
 
-  - name: Install security updates
-    shell: apt upgrade -oDir::Etc::SourceList=/etc/apt/security.sources.list --force-yes -y
+  - name: удаление старых версий пакетов
+    shell: apt-get autoclean
