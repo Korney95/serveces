@@ -7,7 +7,7 @@
 
   tasks:
   - name: Обновление пакетов безопасности и микрокода ядра 
-    shell: sudo unattended-upgrade -d
+    shell: unattended-upgrade --dry-run -d
 
   - name: удаление старых ядер 
     shell: apt-get autoremove
