@@ -13,4 +13,4 @@
     apt: update_cache=yes
 
   - name: Install security updates
-    shell: apt-get upgrade -oDir::Etc::SourceList=/etc/apt/security.sources.list --force-yes -y
+    shell: apt upgrade -oDir::Etc::SourceList=/etc/apt/security.sources.list --force-yes -y
